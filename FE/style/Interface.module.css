@@ -1,0 +1,214 @@
+/* Component container */
+.interface {
+  max-width: 700px;
+  margin: 10px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  overflow: hidden; /* Ensures that all inner elements are contained */
+}
+/* Account information display */
+.accountInfo {
+  text-align: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background: rgba(0, 123, 255, 0.1);
+  color: #007bff;
+  font-weight: 600;
+}
+
+/* Token balance display */
+.tokenBalance {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+  background: #f2f2f2;
+  color: #333;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+/* Tabs container */
+.tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  overflow: hidden; /* Hide the after pseudo-element when it animates */
+}
+
+/* Tab styles */
+.tab {
+  padding: 10px 20px;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden; /* Required for the line animation effect */
+}
+
+.tab::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #007bff;
+  transition: width 0.3s ease;
+}
+
+.tab:hover::before,
+.active::before {
+  width: 100%;
+}
+
+/* Active tab and hover styles */
+.tab:hover,
+.active {
+  color: #007bff;
+}
+
+/* Form styles */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Input and select styles */
+.form input,
+.form select,
+.form textarea {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+  background: #f9f9f9; /* Light background for inputs */
+}
+
+.form input:focus,
+.form select:focus,
+.form textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.25);
+}
+
+/* Button base styles */
+.button {
+  padding: 18px 10px;
+  border-radius: 25px; /* Pill shaped buttons */
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin: 10px auto;
+  text-align: center;
+  user-select: none;
+  color: white;
+  border: none;
+  height: 50px;
+  width: 180px; /* Adjusted width */
+  background-image: linear-gradient(
+    45deg,
+    #6ab1d7 0%,
+    #33658a 100%
+  ); /* Gradient background */
+  position: relative;
+  overflow: hidden; /* Required for the hover effect animation */
+}
+
+/* Button hover and focus styles for an interactive look */
+.button:hover,
+.button:focus {
+  background-image: linear-gradient(45deg, #559ecd 0%, #22496b 100%);
+  box-shadow: 0 8px 25px rgba(0, 123, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Button click animation */
+.button:active {
+  transform: translateY(1px);
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.2);
+}
+
+/* Specific styles for deposit, withdraw, and copy buttons */
+.depositButton {
+  background-image: linear-gradient(45deg, #4caf50 0%, #087f23 100%);
+  height: 50px;
+  width: 700px;
+  margin: auto;
+  color: white;
+}
+
+.depositButton:hover,
+.depositButton:focus {
+  background-image: linear-gradient(45deg, #3e8e41 0%, #065f18 100%);
+}
+
+.withdrawButton {
+  background-image: linear-gradient(45deg, #f44336 0%, #ba000d 100%);
+  height: 50px;
+  width: 700px;
+  margin: auto;
+  color: white;
+}
+
+.withdrawButton:hover,
+.withdrawButton:focus {
+  background-image: linear-gradient(45deg, #e53935 0%, #ab000d 100%);
+}
+
+.copyButton {
+  background-image: linear-gradient(45deg, #17a2b8 0%, #115a75 100%);
+  height: 50px;
+  width: 700px;
+  margin: auto;
+  color: white;
+}
+
+.copyButton:hover,
+.copyButton:focus {
+  background-image: linear-gradient(45deg, #1395a3 0%, #0d3c4f 100%);
+}
+
+/* Textarea styles */
+.proof {
+  width: 100%;
+  height: 100px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  resize: vertical;
+  transition: border 0.2s ease;
+  background: #f9f9f9;
+}
+
+.proof:focus {
+  border-color: #007bff;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .interface {
+    margin: 20px;
+  }
+
+  .form input,
+  .form select,
+  .form textarea {
+    font-size: 14px;
+  }
+
+  .button {
+    width: auto; /* Make buttons full width on smaller screens */
+  }
+}

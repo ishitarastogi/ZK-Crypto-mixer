@@ -1,0 +1,5 @@
+type mixerCommitment @entity(immutable: false) {
+  id: ID!
+  commitments: [BigInt!]!
+  totalLeafs: BigInt!
+}

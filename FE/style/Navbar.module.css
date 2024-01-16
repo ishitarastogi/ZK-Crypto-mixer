@@ -1,0 +1,68 @@
+.container {
+  background-color: #2c3e50; /* Adjust to the specific color you have */
+  font-family: "Arial", sans-serif; /* Change as per your design */
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo {
+  font-size: 24px;
+  color: white; /* Adjust to the specific color you have */
+  font-weight: bold;
+}
+
+.navLinks {
+  display: flex;
+}
+
+.navItem {
+  color: #ecf0f1; /* Adjust to the specific color you have */
+  text-decoration: none;
+  margin-right: 30px; /* Adjust the spacing as needed */
+  font-size: 18px;
+  padding: 5px 0;
+  position: relative;
+}
+
+.navItem::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #3498db; /* Adjust to the specific color you have */
+  transition: width 0.3s;
+}
+
+.navItem:hover::after {
+  width: 100%;
+}
+
+.contactButton {
+  padding: 10px 25px;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    #3498db,
+    #2ecc71
+  ); /* Adjust the gradient colors as needed */
+  color: white;
+  font-size: 18px;
+  border-radius: 20px; /* Adjust for roundness */
+  cursor: pointer;
+  transition: background-image 0.3s;
+}
+
+.contactButton:hover {
+  background-image: linear-gradient(
+    to right,
+    #2ecc71,
+    #3498db
+  ); /* Adjust the hover gradient colors as needed */
+}

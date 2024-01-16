@@ -1,0 +1,47 @@
+{
+  "44787": {
+    "cryptoMixer": "",
+    "asp": "",
+    "erc20": ""
+  },
+  "5001": {
+    "cryptoMixer": "",
+    "asp": "",
+    "erc20": ""
+  },
+  "534351": {
+    "cryptoMixer": "",
+    "asp": "",
+    "erc20": ""
+  },
+  "84531": {
+    "cryptoMixer": "",
+    "asp": "",
+    "erc20": ""
+  },
+  "1442": {
+    "cryptoMixer": "",
+    "asp": "",
+    "erc20": ""
+  },
+  "195": {
+    "cryptoMixer": "",
+    "asp": "",
+    "erc20": ""
+  },
+  "421613": {
+    "cryptoMixer": "",
+    "asp": "",
+    "erc20": ""
+  },
+  "80001": {
+    "usdc": "0xA6048249e3F8D0676140c7A1CA3C7db426CB7266",
+    "usdcMixer": "0x561d174ACC00A5dC74fF4F182c3Fe5303233EF48",
+    "usdcASP": "0x0880Fc585Ea107A44f54eeC2d8a11cE0c55eB0AA",
+    "BaseASP": "0x0880Fc585Ea107A44f54eeC2d8a11cE0c55eB0AA",
+    "aadharASP": "0xcF45cD44f6aBad402A1EeBD5A079943b45D5BF01",
+    "EthMixer": "0xe6e8ff11CCd28E1fF733084Bdd9Df1821afaFA23",
+    "USDCdDepositIndex": 2,
+    "EthDepositIndex": 1
+  }
+}

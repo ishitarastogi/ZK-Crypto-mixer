@@ -1,0 +1,259 @@
+/* MerkleTree.module.css
+.container {
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.level {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.nodeWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+}
+
+.node {
+  padding: 8px 12px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.lines {
+  position: absolute;
+  bottom: -20px;
+}
+
+/* Add styles for the SVG lines */
+/* .line {
+  stroke-width: 2;
+}
+
+/* Add media queries if necessary to handle responsiveness */
+/* @media (max-width: 600px) {
+  .level {
+    flex-direction: column;
+  }
+
+  .nodeWrapper {
+    margin: 20px 0;
+  }
+
+  .lines {
+    display: none; /* Hide lines on very small screens for clarity */
+/* }
+} */
+/* adadnad */
+/* .treeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  min-height: 100vh;
+  padding-top: 20px;
+  background-color: #f4f4f9;
+  font-family: "Arial", sans-serif;
+}
+
+.tree {
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.layer {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.node {
+  margin: 0 15px;
+  padding: 10px 20px;
+  background-color: #e3f2fd;
+  border: 2px solid #90caf9;
+  border-radius: 8px;
+  font-size: 16px;
+  word-break: break-all;
+  text-align: center;
+  max-width: 100px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.layer0 {
+  /* Root layer */
+/* color: #0d47a1;
+  font-weight: bold;
+}
+
+.layer1 {
+  color: #1976d2;
+}
+.layer2 {
+  color: #2196f3;
+}
+.layer3 {
+  color: #64b5f6;
+}
+.layer4 {
+  /* Leaf layer */
+/* color: #bbdefb;
+  font-style: italic; */
+/* }  */
+.mainContainer {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  background-color: #f4f4f9;
+  height: calc(
+    87vh - 50px
+  ); /* Adjust this value to the actual height of your navbar */
+  margin-top: 50px; /* Adjust this value to the actual height of your navbar */
+  overflow: hidden;
+}
+.description h1 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 0.5em;
+}
+
+.description h2 {
+  font-size: 1.2em;
+  color: #666;
+  margin-bottom: 0.5em;
+}
+
+.description p {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #666;
+}
+.dropdownContainer {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.detailsContainer {
+  flex: 2; /* Allocates more space for the right side */
+  display: flex;
+  flex-direction: column;
+}
+
+.treeSelector {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #90caf9;
+}
+/* Attestation.module.css */
+.eligibilityButton {
+  background-color: #4caf50; /* Green */
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+/* .treeDisplay {
+  flex-grow: 1;
+  overflow-y: auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+} */
+.treeDisplay {
+  flex-grow: 1;
+  display: flex; /* Use flexbox to align children */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center children vertically */
+  align-items: center; /* Center children horizontally */
+  overflow-y: auto; /* Add scroll if content overflows */
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.description {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.layer {
+  display: flex;
+  justify-content: center; /* Center nodes horizontally */
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.node {
+  margin: 0 10px;
+  padding: 5px 10px;
+  background-color: #e3f2fd;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  font-size: 14px;
+  word-break: break-all;
+  text-align: center;
+  max-width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.mainHeading {
+  text-align: center;
+}
+.proofContainer {
+  max-width: 900px;
+  max-height: 400px;
+  overflow-y: auto;
+  border: 1px solid #90caf9;
+  border-radius: 8px;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.layer0 {
+  color: #0d47a1;
+  font-weight: bold;
+}
+
+.layer1 {
+  color: #1976d2;
+}
+
+.layer2 {
+  color: #2196f3;
+}
+
+.layer3 {
+  color: #64b5f6;
+}
+
+.layer4 {
+  color: #bbdefb;
+  font-style: italic;
+}
